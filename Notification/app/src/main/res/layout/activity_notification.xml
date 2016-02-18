@@ -13,7 +13,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Press the button to dysplay a notification" />
+        android:text="Enter your name and your location and Press the button to display a notification" />
+
+    <EditText
+        android:id="@+id/txt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Name"/>
+
+    <EditText
+        android:id="@+id/txt_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Location"/>
 
     <Button
         android:id="@+id/btn_show"
