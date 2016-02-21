@@ -1,9 +1,9 @@
 package manmarper.com.flash;
 
 import android.hardware.Camera;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.hardware.Camera.Parameters;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        btnFlash = (Button) findViewById(R.id.btn_flash);
 
         camera = Camera.open(); // open camera
 
