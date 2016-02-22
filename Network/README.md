@@ -1,6 +1,8 @@
 **Android** - Network
 ==================================================
 
+![alt tag](http://www.mytechproservices.com/wp-content/uploads/2013/04/wireless-network.jpg)
+
 This example permits making a simple network availability verification. <br>
 
 Using the ConnectivityManager Class its possyble make a verification of network availability.
