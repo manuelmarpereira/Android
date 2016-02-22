@@ -3,7 +3,7 @@
 
 This example permits making a simple network availability verification. <br>
 
-Using the ConnectivityManager Class its possyble make a verification of natwork availability.
+Using the ConnectivityManager Class its possyble make a verification of network availability.
 		
 		ConnectivityManager cm;
         cm = (ConnectivityManager) this.getSystemService(Context.CONNECTIVITY_SERVICE);
