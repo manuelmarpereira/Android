@@ -1,6 +1,8 @@
 **Android** - Camera
 ==================================================
 
+![alt tag](http://www.revdl.com/wp-content/uploads/2014/10/Snap.Camera.HDR_.png)
+
 This example permits take photos from your camera or pick images from your device gallery, and add these images to an images list.
 
 This app needs permissions to:
