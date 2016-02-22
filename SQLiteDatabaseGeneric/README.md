@@ -1,6 +1,8 @@
 **Android** - SQLiteDatabaseGeneric
 ==================================================
 
+![alt tag](http://www.dbpros.org/img/parser.png)
+
 This is a simple example to create a CRUD in your Android App, using SQLite database. <br>
 
 SQLite is a opensource SQL database that stores data to a text file on a device. Android comes in with built in SQLite database implementation. <br>
