@@ -1,7 +1,7 @@
 **Android** - Camera
 ==================================================
 
-This example permits take photos from your camera or pick images from your device gallery and add these images to an images list
+This example permits take photos from your camera or pick images from your device gallery, and add these images to an images list;
 
 This app needs permissions to:
 		
