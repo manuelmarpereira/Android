@@ -1,6 +1,8 @@
 **Android** - GPS
 ==================================================
 
+![alt tag](http://www.masternaut.pt/site2010/medias/ico_07.jpg)
+
 Simple GPS example. You can view your courrent location on map using GPS in your device.
 
 This app needs permissions to:
