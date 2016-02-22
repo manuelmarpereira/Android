@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
 
 
-                    case "Pick from Gallery"://pick product image from gallery
+                    case "Pick from Gallery"://pick  image from gallery
 
                         Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                         startActivityForResult(intent, 2);
