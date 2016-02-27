@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "manmarper.com.observer"
+        applicationId "manmarper.com.speechtotext"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
