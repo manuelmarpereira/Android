@@ -1,4 +1,4 @@
-package manmarper.com.observer;
+package manmarper.com.speechtotext;
 
 import org.junit.Test;
 
