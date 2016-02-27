@@ -22,6 +22,6 @@ Finally the onDestroy() method is used to free the resources used by the TTS eng
 	
 The TextToSpeech class has the speak() function.This method has some arguments, and there are two options when a new text is added to the queue.<br>
 
-		QUEUE_ADD - add the new entry to the end of the queue<br>
+		QUEUE_ADD - add the new entry to the end of the queue
 		
 		QUEUE_FLUSH - all entries already stored in the queue are deleted and replaced by a new entry
