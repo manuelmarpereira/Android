@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnGoalPsg;
     Button btnGoalChelsea;
-    CheckBox checkPsg ;
-    CheckBox checkChelsea ;
+    CheckBox checkPsg;
+    CheckBox checkChelsea;
     TextView txtChelseaGoals;
     TextView txtPsgGoals;
 
@@ -29,13 +29,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        //initialize text views for goals
         txtChelseaGoals = (TextView) findViewById(R.id.txt_chelsea_goals);
         txtPsgGoals = (TextView) findViewById(R.id.txt_psg_goals);
 
+
+        //initialize  btn and events
         btnGoalChelsea = (Button) findViewById(R.id.btn_goal_chelsea);
         btnGoalChelsea.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //set goal chelsea
                 chelseaSubject.setGoal();
                 updateGoals(txtChelseaGoals);
 
@@ -46,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         btnGoalPsg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //set goal psg
                 psgSubject.setGoal();
                 updateGoals(txtPsgGoals);
 
@@ -53,11 +59,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        //initialize checkbox follow team and events
         checkChelsea = (CheckBox) findViewById(R.id.check_chelsea);
         checkChelsea.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                verifyCheckChelsea();
+                verifyCheckedTeam(checkChelsea, chelseaObserver, chelseaSubject);
             }
         });
 
@@ -65,40 +72,29 @@ public class MainActivity extends AppCompatActivity {
         checkPsg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                verifyCheckPsg();
+                verifyCheckedTeam(checkPsg, psgObserver, psgSubject);
             }
         });
 
     }
 
-    private void verifyCheckPsg(){
-        if (checkPsg.isChecked()){
-           psgObserver= new GoalObserver(psgSubject, MainActivity.this);
-            Toast.makeText(MainActivity.this, "Follow "+psgSubject.getName(), Toast.LENGTH_SHORT).show();
+    //verification if team is checked
+    private void verifyCheckedTeam(CheckBox checkBoxTeam, Observer observer, TeamSubject teamSubject) {
+
+        if (checkBoxTeam.isChecked()) {
+            observer = new GoalObserver(teamSubject, MainActivity.this);
+            Toast.makeText(MainActivity.this, "Follow " + teamSubject.getName(), Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(MainActivity.this, "Unfollow " + teamSubject.getName(), Toast.LENGTH_SHORT).show();
+            teamSubject.remove(observer);
         }
 
-        else{
-            Toast.makeText(MainActivity.this, "Unfollow "+psgSubject.getName(), Toast.LENGTH_SHORT).show();
-            psgSubject.remove(psgObserver);
-        }
     }
 
-    private void verifyCheckChelsea(){
-        if (checkChelsea.isChecked()){
-            chelseaObserver= new GoalObserver(chelseaSubject, MainActivity.this);
-            Toast.makeText(MainActivity.this, "Follow "+chelseaSubject.getName(), Toast.LENGTH_SHORT).show();
-        }
+    private void updateGoals(TextView team) {
 
-        else{
-            Toast.makeText(MainActivity.this, "Unfollow "+chelseaSubject.getName(), Toast.LENGTH_SHORT).show();
-            chelseaSubject.remove(chelseaObserver);
-        }
-    }
-
-    private void updateGoals(TextView team){
-
-        int Goals = Integer.parseInt(team.getText().toString())+1;
-        team.setText(""+Goals);
+        int Goals = Integer.parseInt(team.getText().toString()) + 1;
+        team.setText("" + Goals);
 
     }
 
