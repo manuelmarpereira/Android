@@ -61,40 +61,40 @@ Behavioral design patterns
 These design patterns are all about Class's objects communication. Behavioral patterns are those patterns that are most specifically concerned with communication between objects.
 
 
-<b>Chain of responsibility,</b>
+<b>Chain of responsibility</b>
 A way of passing a request between a chain of objects<br>
 
-<b>Command,</b>
+<b>Command</b>
 Encapsulate a command request as an object<br>
 
-<b>Interpreter,</b>
+<b>Interpreter</b>
 A way to include language elements in a program<br>
 
-<b>Iterator,</b>
+<b>Iterator</b>
 Sequentially access the elements of a collection<br>
 
-<b>Mediator,</b>
+<b>Mediator</b>
 Defines simplified communication between classes<br>
 
-<b>Memento,</b>
+<b>Memento</b>
 Capture and restore an object's internal state<br>
 
-<b>Null Object,</b>
+<b>Null Object</b>
 Designed to act as a default value of an object<br>
 
-<b>Observer,</b>
+<b>Observer</b>
 A way of notifying change to a number of classes<br>
 
-<b>State,</b>
+<b>State</b>
 Alter an object's behavior when its state changes<br>
 
-<b>Strategy,</b>
+<b>Strategy</b>
 Encapsulates an algorithm inside a class<br>
 
-<b>Template method,</b>
+<b>Template method</b>
 Defer the exact steps of an algorithm to a subclass<br>
 
-<b>Visitor,</b>
+<b>Visitor</b>
 Defines a new operation to a class without change<br><br><br>
 
 source: [sourcemaking.com link](https://sourcemaking.com/design_patterns)
