@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -12,5 +13,166 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:text="Menus" />
+
+
+    <HorizontalScrollView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_hamburger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/hamburger"
+            android:text="Hamburger 5€"/>
+
+        <Button
+            android:id="@+id/btn_sandwich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/sandwich"
+            android:text="Sandwich 3€"/>
+
+        <Button
+            android:id="@+id/btn_pizza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/pizza"
+            android:text="Pizza 4€"/>
+
+
+    </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu Extra" />
+
+
+    <HorizontalScrollView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_chips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/chips"
+                android:text="Chips 1,5€"/>
+
+            <Button
+                android:id="@+id/btn_drink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/drink"
+                android:text="Drink 2€"/>
+
+            <Button
+                android:id="@+id/btn_dessert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/dessert"
+                android:text="Dessert 3€"/>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="10sp"
+        android:layout_height="wrap_content"
+        android:text="------------- INVOICE -------------"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:textColor="@android:color/holo_blue_light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_menu_name"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="no menu selected"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/txt_menu_price"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extras"
+        android:textColor="@android:color/holo_blue_light"/>
+
+
+        <TextView
+            android:id="@+id/txt_extra_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="no extras selected"
+            android:layout_marginLeft="20dp"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total: "
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/holo_blue_light"/>
+
+        <TextView
+            android:id="@+id/txt_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 Euros"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
