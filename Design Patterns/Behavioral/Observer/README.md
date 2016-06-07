@@ -27,10 +27,3 @@ We have create the classes:
 ![alt tag](https://dl.dropboxusercontent.com/u/110418380/git/android/design_patterns/observer_ex.PNG)
 
 Our demo class is the MainActivity, will use Subject and concrete class objects to show our observer pattern in action.
-
-<script type="text/javascript">
-window.onload = function() {
- Android.addButtons();
-};
-</script>
-
