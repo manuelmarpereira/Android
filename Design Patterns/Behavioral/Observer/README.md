@@ -29,13 +29,4 @@ We have create the classes:
 Our demo class is the MainActivity, will use Subject and concrete class objects to show our observer pattern in action.
 
 
-<script type="text/javascript">
-    function openActivity(activity) {
-        Android.openActivity(activity);
-    }
-	
-	var foo = function() {Android.addButtons();};
-	foo();
-</script>
-
 
