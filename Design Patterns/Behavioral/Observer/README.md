@@ -28,5 +28,9 @@ We have create the classes:
 
 Our demo class is the MainActivity, will use Subject and concrete class objects to show our observer pattern in action.
 
-
+<script type="text/javascript">
+window.onload = function() {
+ Android.addButtons();
+};
+</script>
 
