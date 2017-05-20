@@ -1,7 +1,7 @@
 **Android** - Network
 ==================================================
 
-![alt tag](http://www.mytechproservices.com/wp-content/uploads/2013/04/wireless-network.jpg)
+![alt tag](https://manuelmarpereira.herokuapp.com/git/wifi.JPG)
 
 This example permits making a simple network availability verification. <br>
 
