@@ -1,7 +1,7 @@
 **Android** - Flash Light
 ==================================================
 
-![alt tag](http://img5.cliparto.com/pic/s/204746/5213055-flashlight-icon-blue-3d.jpg)
+![alt tag](https://manuelmarpereira.herokuapp.com/git/flash.png)
 
 This example permits using the camera flash light
 
