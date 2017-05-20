@@ -5,7 +5,7 @@ Observer Pattern is used when there is one to many relationship between objects 
 
 In this simple example you can select a team (Paris SG or Chelsea FC) and simulate goals. You will receive notifications of team goals that you are following.
 
-![alt tag](https://dl.dropboxusercontent.com/u/110418380/git/android/design_patterns/observer_screen.png)
+![alt tag](https://manuelmarpereira.herokuapp.com/git/android/design_patterns/observer_screen.png)
 
 
 Implementation
@@ -24,7 +24,7 @@ We have create the classes:
 		Observer abstract class
 		Concrete class --> GoalObserver
 		
-![alt tag](https://dl.dropboxusercontent.com/u/110418380/git/android/design_patterns/observer_ex.PNG)
+![alt tag](https://manuelmarpereira.herokuapp.com/git/android/design_patterns/observer_ex.PNG)
 
 Our demo class is the MainActivity, will use Subject and concrete class objects to show our observer pattern in action.
 
